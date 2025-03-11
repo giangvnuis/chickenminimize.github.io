@@ -1,0 +1,47 @@
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar Styling */
+.navbar {
+    background-color: #333;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-evenly;  /* Distribute items evenly across the bar */
+    align-items: center;  /* Align items vertically centered */
+    padding: 10px 0;  /* Add padding for better spacing */
+}
+
+.navbar ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;  /* Ensure even spacing between items */
+}
+
+.navbar ul li {
+    text-align: center;
+}
+
+.navbar ul li a {
+    display: block;
+    color: white;
+    padding: 14px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navbar ul li a:hover {
+    background-color: #575757;
+}
+
+/* Content Styling */
+.content {
+    padding: 20px;
+    background-color: #f4f4f4;
+}

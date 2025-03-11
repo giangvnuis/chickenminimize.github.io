@@ -1,0 +1,45 @@
+/* General Body and Layout */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f4f4f4;
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    max-width: 1000px;  /* Increased max-width for a wider section */
+    margin: 0 auto;
+}
+
+/* Article Styling */
+article {
+    background-color: white;
+    border: 1px solid #ddd;
+    padding: 30px;  /* Increased padding for articles */
+    margin-bottom: 30px;  /* Increased bottom margin for more spacing between articles */
+    border-radius: 8px;
+}
+
+/* Header Styling */
+article header {
+    margin-bottom: 20px;
+}
+
+article header h2 {
+    margin: 0;
+    font-size: 32px;  /* Increased font size for the title */
+    color: #333;
+}
+
+article header p {
+    font-size: 18px;  /* Increased font size for the date/author info */
+    color: #888;
+}
+
+/* Paragraph Styling */
+article p {
+    font-size: 20px;  /* Increased font size for the paragraph text */
+    color: #333;
+}
