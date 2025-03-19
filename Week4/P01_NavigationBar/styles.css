@@ -1,18 +1,16 @@
-/* General Body and Layout */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Navigation Bar Styling */
 .navbar {
     background-color: #333;
     overflow: hidden;
     display: flex;
-    justify-content: space-evenly;  /* Distribute items evenly across the bar */
-    align-items: center;  /* Align items vertically centered */
-    padding: 10px 0;  /* Add padding for better spacing */
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 10px 0;
 }
 
 .navbar ul {
@@ -21,7 +19,7 @@ body {
     padding: 0;
     display: flex;
     width: 100%;
-    justify-content: space-evenly;  /* Ensure even spacing between items */
+    justify-content: space-evenly;
 }
 
 .navbar ul li {
@@ -40,7 +38,6 @@ body {
     background-color: #575757;
 }
 
-/* Content Styling */
 .content {
     padding: 20px;
     background-color: #f4f4f4;
