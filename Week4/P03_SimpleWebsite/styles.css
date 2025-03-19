@@ -54,5 +54,5 @@ footer {
     background-color: #444;
     color: white;
     font-size: 14px;
-    margin-top: auto; /* Ensures footer is always at the bottom */
+    margin-top: auto;
 }
