@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Rectangle Calculator</title>
+  <style>
+    body { font-family: Arial; padding: 20px; }
+    button { padding: 10px 20px; }
+    #result { margin-top: 20px; font-size: 18px; }
+  </style>
+  <script>
+    function calculateRectangle() {
+      var length = prompt("Enter the length of the rectangle:");
+      var width = prompt("Enter the width of the rectangle:");
+
+      if (isNaN(length) || isNaN(width) || length.trim() === "" || width.trim() === "") {
+        document.getElementById("result").innerHTML = "<span style='color:red'>Please enter valid numbers.</span>";
+        return;
+      }
+
+      length = parseFloat(length);
+      width = parseFloat(width);
+      var perimeter = 2 * (length + width);
+      var area = length * width;
+
+      document.getElementById("result").innerHTML =
+        "Perimeter: " + perimeter + "<br>Area: " + area;
+    }
+  </script>
+</head>
+<body>
+  <h1>Rectangle Perimeter and Area</h1>
+  <button onclick="calculateRectangle()">Calculate</button>
+  <div id="result"></div>
+</body>
+</html>

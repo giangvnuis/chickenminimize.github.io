@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Even or Odd Checker</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            padding: 30px;
+        }
+
+        button {
+            padding: 8px 16px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        #result {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+    </style>
+    <script>
+        function checkEvenOdd() {
+            var input = prompt("Enter any integer");
+
+            if (input === null || input.trim() === "" || isNaN(input)) {
+                document.getElementById("result").innerHTML = "<span style='color:red'>You must enter a number</span>";
+            } else if (parseInt(input) % 2 === 0) {
+                document.getElementById("result").innerHTML = "<span style='color:green'><b>" + input + " is an even number</b></span>";
+            } else {
+                document.getElementById("result").innerHTML = "<span style='color:blue'><i>" + input + " is an odd number</i></span>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>Even or Odd Checker</h1>
+    <button onclick="checkEvenOdd()">Check Number</button>
+    <div id="result"></div>
+</body>
+
+</html>
